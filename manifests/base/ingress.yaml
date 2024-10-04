@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: 82238157-ingress
+  name: "82238157-ingress"
 spec:
   ingressClassName: ingress-internal
   rules:
-  - host: 82238157.cepg-aa.kubepia.net
+  - host: "82238157.cepg-aa.kubepia.net"
     http:
       paths:
       - path: /
         backend:
           service:
-            name: 82238157
+            name: my-82238157
             port:
               number: 8080
         pathType: Prefix
