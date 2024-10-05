@@ -13,7 +13,7 @@ public class MyjRestController {
 
 	@GetMapping("/user")
     public String home() {
-		log.info("return start");
+		log.info("return start ing");
         return "82238157";
     }
 }
